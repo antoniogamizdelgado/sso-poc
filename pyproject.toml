@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "sso-poc"
+version = "0.1.0"
+description = ""
+authors = ["antoniogamizbadger <antonio.gamiz@badgermapping.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.116.1"
+httpx = "^0.28.1"
+python-dotenv = "^1.0.0"
+uvicorn = "^0.35.0"
+python-multipart = "^0.0.20"
+pysaml2 = "^7.5.2"
+pyOpenSSL = "==23.3.0"
+cryptography = "==41.0.7"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
