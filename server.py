@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse
 import uvicorn
 from saml.adhoc.router import adhoc_saml_router
 from saml.pysaml.router import pysaml_saml_router
+from openid.adhoc.router import adhoc_openid_router
 
 from utils import get_env_value
 
@@ -19,6 +20,7 @@ async def health():
 
 if True:
     app.include_router(adhoc_saml_router)
+    app.include_router(adhoc_openid_router)
 else:
     app.include_router(pysaml_saml_router)
 
